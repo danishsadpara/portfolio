@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, ReactElement } from "react";
 import { ThemeSwitch } from "./ThemeSwitch";
 import Logo from "./Logo";
 import Avatar from "./Avatar";
@@ -9,15 +9,18 @@ import { AppbarSchema } from "@/schema/Appbar";
 
 const Appbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
-
+  const logoRef = useRef<HTMLDivElement>(null);
   const toggleDropdown = () => {
+    if (logoRef.current) {
+      logoRef.current.focus(); // Ensure this is needed
+    }
     setIsDropdownOpen((prev) => !prev);
   };
 
   return (
     <nav className="bg-slate-200 dark:bg-slate-950">
       <div className="flex justify-between items-center px-6 py-3">
-        <div>
+        <div ref={logoRef} tabIndex={0}>
           <Logo />
         </div>
         <div className="flex items-center justify-center space-x-4">
