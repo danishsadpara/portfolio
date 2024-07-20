@@ -1,6 +1,6 @@
 import React from "react";
-import Avatar from "../../utils/Avatar";
-import Tag from "../../utils/Tag";
+import Avatar from "../../components/Avatar";
+import Tag from "../../components/Tag";
 
 const Profile = () => {
   const user = {

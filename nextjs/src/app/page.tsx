@@ -1,5 +1,5 @@
-import Avatar from "../utils/Avatar";
-import Tag from "../utils/Tag";
+import Avatar from "../components/Avatar";
+import Tag from "../components/Tag";
 
 export default function Home() {
   type optional<Type> = {

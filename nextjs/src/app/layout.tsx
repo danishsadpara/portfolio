@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import Appbar from "@/utils/Appbar";
+import Appbar from "@/components/Appbar";
 
 export const metadata: Metadata = {
   title: "Code Discovery",
