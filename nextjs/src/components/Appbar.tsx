@@ -22,7 +22,10 @@ const Appbar: React.FC = () => {
           <div className="">
             <ThemeSwitch />
           </div>
-          <Tag text="danishsadpara" />
+          <span className="hidden md:block">
+            <Tag text="danishsadpara" />
+          </span>
+
           <div className="relative">
             <Avatar
               source="/self.jpg"

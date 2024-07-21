@@ -1,0 +1,50 @@
+{
+  "avatar": "/self.jpg",
+  "name": "Muhammad Murtaza Danish",
+  "nationality": "Pakistani",
+  "gender": "Male",
+  "email": "danishsadpara@gmail.com",
+  "phone": "+92 312 0078619",
+  "address": "House no. 547, street no. 54, sector i-10/1 Islamabad",
+  "education": [
+    {
+      "degree": "Bachelor of Computer Science (Software Engineering)",
+      "institution": "Federal Urdu University of Arts Science and Technology (FUUAST)",
+      "location": "Islamabad (Pakistan)",
+      "dates": "1/10/2018 - 1/08/2022"
+    }
+  ],
+  "workExperience": [
+    {
+      "position": "Software Engineer",
+      "company": "PIXAKO TECHNOLOGIES PVT",
+      "location": "Islamabad (Pakistan)",
+      "dates": "01/02/2016 - present"
+    }
+  ],
+  "languageSkills": [
+    {
+      "language": "English",
+      "proficiency": "B1",
+      "skills": ["Understanding", "Speaking", "Writing"]
+    },
+    {
+      "language": "Urdu",
+      "proficiency": "Native",
+      "skills": []
+    },
+    {
+      "language": "Shina",
+      "proficiency": "Mother tongue",
+      "skills": []
+    }
+  ],
+  "digitalSkills": ["Javascript", "Nextjs", "mongodb", "graphQL", "Typescript"],
+  "additionalInformation": {
+    "publications": [
+      "Innovative Channels Pvt. Karachi (Pakistan) - 2019",
+      "Diamantini, C., Khan, T., Potena, D. and Storti, E., 2022",
+      "Keyword Extraction Using Graph-Based Approaches - 2017"
+    ]
+  }
+}
