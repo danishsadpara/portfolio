@@ -1,6 +1,5 @@
 import React from "react";
-import Avatar from "../../components/Avatar";
-import Tag from "../../components/Tag";
+import Avatar from "@/components/Avatar";
 
 const Profile = () => {
   const user = {
@@ -25,9 +24,9 @@ const Profile = () => {
         <div className="">
           <button
             // onClick={downloadPDF}
-            className="bg-slate-500 rounded-full text-white px-2 py-1 "
+            className="bg-slate-500 rounded-full text-white px-2 py-1 animate-bounce"
           >
-            <p className="text-xs"> Download</p>
+            <p className="text-xs "> Download</p>
           </button>
         </div>
       </div>

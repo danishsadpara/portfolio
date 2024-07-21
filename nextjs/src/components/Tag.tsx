@@ -1,12 +1,12 @@
 import React, { ReactNode } from "react";
 interface TagProp {
-  name: string;
+  text: string;
 }
 
-const Tag: React.FC<TagProp> = ({ name }) => {
+const Tag: React.FC<TagProp> = ({ text }) => {
   return (
-    <div className=" px-2 bg-slate-100 dark:bg-slate-900 rounded-full w-max h-max">
-      <p className="font-semibold "> {name}</p>
+    <div className=" px-2 py-1  rounded-full outline outline-1  w-max h-max">
+      <p className=" "> {text}</p>
     </div>
   );
 };

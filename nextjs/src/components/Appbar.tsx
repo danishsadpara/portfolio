@@ -6,27 +6,23 @@ import Avatar from "./Avatar";
 import { CogIcon } from "@heroicons/react/24/solid";
 import Dropdown from "./Dropdown";
 import { AppbarSchema } from "@/schema/Appbar";
+import Tag from "./Tag";
 
 const Appbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
-  const logoRef = useRef<HTMLDivElement>(null);
   const toggleDropdown = () => {
-    if (logoRef.current) {
-      logoRef.current.focus(); // Ensure this is needed
-    }
     setIsDropdownOpen((prev) => !prev);
   };
 
   return (
     <nav className="bg-slate-200 dark:bg-slate-950">
       <div className="flex justify-between items-center px-6 py-3">
-        <div ref={logoRef} tabIndex={0}>
-          <Logo />
-        </div>
+        <Logo />
         <div className="flex items-center justify-center space-x-4">
           <div className="">
             <ThemeSwitch />
           </div>
+          <Tag text="danishsadpara" />
           <div className="relative">
             <Avatar
               source="/self.jpg"
@@ -35,7 +31,9 @@ const Appbar: React.FC = () => {
               height={40}
             />
             <CogIcon
-              className="h-4 w-4 text-yellow-500 dark:text-white absolute -bottom-0.5 -right-0.5 cursor-pointer"
+              className={` h-4 w-4 z-30 text-yellow-500 dark:text-white absolute -bottom-0.5 -right-0.5 cursor-pointer ${
+                isDropdownOpen ? "animate-spin" : ""
+              }`}
               onClick={toggleDropdown}
             />
             {isDropdownOpen && (
