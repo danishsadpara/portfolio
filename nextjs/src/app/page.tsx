@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import Avatar from "../components/Avatar";
 import Tag from "../components/Tag";
 
@@ -13,6 +14,8 @@ export default function Home() {
   };
   type mutableUser = optional<user>;
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+    <main className="flex  flex-col items-center justify-between py-24">
+      <Hero />
+    </main>
   );
 }
