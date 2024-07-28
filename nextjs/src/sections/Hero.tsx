@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import Avatar from "./Avatar";
 import { AtSymbolIcon } from "@heroicons/react/24/solid";
-
+import Avatar from "@/components/Avatar";
 const Hero = () => {
   return (
     <div>

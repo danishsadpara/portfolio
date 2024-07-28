@@ -1,7 +1,6 @@
 "use client";
-import React, { useState, useRef, ReactElement } from "react";
+import React, { useState } from "react";
 import { ThemeSwitch } from "./ThemeSwitch";
-import Logo from "./Logo";
 import Avatar from "./Avatar";
 import { CogIcon } from "@heroicons/react/24/solid";
 import Dropdown from "./Dropdown";
@@ -15,16 +14,15 @@ const Appbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-slate-200 dark:bg-slate-950">
+    <nav className="">
       <div className="flex justify-between items-center px-6 py-3">
-        <Logo />
+        <span className="hidden md:block">
+          <Tag text="danishsadpara" />
+        </span>
         <div className="flex items-center justify-center space-x-4">
           <div className="">
             <ThemeSwitch />
           </div>
-          <span className="hidden md:block">
-            <Tag text="danishsadpara" />
-          </span>
 
           <div className="relative">
             <Avatar
