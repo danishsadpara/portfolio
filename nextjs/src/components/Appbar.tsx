@@ -4,8 +4,8 @@ import { ThemeSwitch } from "./ThemeSwitch";
 import Avatar from "./Avatar";
 import { CogIcon } from "@heroicons/react/24/solid";
 import Dropdown from "./Dropdown";
-import { AppbarSchema } from "@/schema/Appbar";
 import Tag from "./Tag";
+import { dropdownData } from "@/schema/dropdown";
 
 const Appbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
@@ -16,8 +16,8 @@ const Appbar: React.FC = () => {
   return (
     <nav className="">
       <div className="flex justify-between items-center px-6 py-3">
-        <span className="hidden md:block">
-          <Tag text="danishsadpara" />
+        <span className=" ">
+          <Tag text="DanishGPT" />
         </span>
         <div className="flex items-center justify-center space-x-4">
           <div className="">
@@ -39,7 +39,7 @@ const Appbar: React.FC = () => {
             />
             {isDropdownOpen && (
               <Dropdown
-                items={AppbarSchema}
+                items={dropdownData}
                 isOpen={isDropdownOpen}
                 toggle={toggleDropdown}
               />

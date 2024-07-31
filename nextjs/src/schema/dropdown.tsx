@@ -1,10 +1,13 @@
+import React from "react";
+
+// hero icons imports
 import {
   UserIcon,
   InformationCircleIcon,
   ArrowRightStartOnRectangleIcon,
 } from "@heroicons/react/24/solid";
 
-export const AppbarSchema = [
+export const dropdownData = [
   {
     title: "Profile",
     route: "/profile",

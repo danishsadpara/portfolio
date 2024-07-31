@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",
-    "@react-spring/web": "^9.7.4",
     "@typescript-eslint/eslint-plugin": "^7.16.1",
     "@typescript-eslint/parser": "^7.16.1",
     "autoprefixer": "^10.4.19",

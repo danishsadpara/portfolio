@@ -1,18 +1,31 @@
-"use client";
+// components/Hero.js
 import React from "react";
-import { AtSymbolIcon } from "@heroicons/react/24/solid";
 import Avatar from "@/components/Avatar";
+import Card from "@/components/Card";
+import { cardsData } from "@/schema/hero";
+
 const Hero = () => {
   return (
-    <div>
-      <div className="relative drop-shadow-lg">
+    <div className="flex flex-col items-center">
+      {/* Centered Logo */}
+      <div className="drop-shadow-lg mb-8">
         <Avatar
           source="/self.jpg"
           altText="self avatar"
           width={80}
           height={80}
         />
-        <AtSymbolIcon className="h-4 w-4 z-30 text-teal-400 dark:text-white absolute bottom-0.5 right-0.5 cursor-pointer" />
+      </div>
+      {/* Card Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl w-full">
+        {cardsData.map((card) => (
+          <Card
+            key={card.id}
+            icon={card.icon}
+            color={card.color}
+            description={card.description}
+          />
+        ))}
       </div>
     </div>
   );
