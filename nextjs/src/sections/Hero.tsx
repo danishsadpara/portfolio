@@ -3,6 +3,7 @@ import React from "react";
 import Avatar from "@/components/Avatar";
 import Card from "@/components/Card";
 import { cardsData } from "@/schema/hero";
+import ChatInput from "@/components/ChatInput";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
       {/* Centered Logo */}
       <div className="drop-shadow-lg mb-8">
         <Avatar
-          source="/self.jpg"
+          source="/main.png"
           altText="self avatar"
           width={80}
           height={80}
@@ -26,6 +27,9 @@ const Hero = () => {
             description={card.description}
           />
         ))}
+      </div>
+      <div className="mt-9 w-full">
+        <ChatInput />
       </div>
     </div>
   );

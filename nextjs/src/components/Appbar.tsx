@@ -4,7 +4,6 @@ import { ThemeSwitch } from "./ThemeSwitch";
 import Avatar from "./Avatar";
 import { CogIcon } from "@heroicons/react/24/solid";
 import Dropdown from "./Dropdown";
-import Tag from "./Tag";
 import { dropdownData } from "@/schema/dropdown";
 
 const Appbar: React.FC = () => {
@@ -17,7 +16,7 @@ const Appbar: React.FC = () => {
     <nav className="">
       <div className="flex justify-between items-center px-6 py-3">
         <span className=" ">
-          <Tag text="DanishGPT" />
+          <p className="font-bold">DanishGPT</p>
         </span>
         <div className="flex items-center justify-center space-x-4">
           <div className="">
