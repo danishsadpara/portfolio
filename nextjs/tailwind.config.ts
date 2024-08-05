@@ -7,6 +7,7 @@ const config: Config = {
     "./src/entities/**/*.{js,ts,jsx,tsx,mdx,json}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/lib/**/*.{js,ts,jsx,tsx,mdx}", // Include the lib folder
   ],
   theme: {
     extend: {
@@ -21,7 +22,11 @@ const config: Config = {
       },
     },
   },
+  variants: {
+    extend: {},
+  },
   plugins: [],
   darkMode: "class",
 };
+
 export default config;

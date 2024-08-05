@@ -1,6 +1,12 @@
-// components/Card.tsx
-import React from "react";
+// "use client";
 
+import React from "react";
+// export const safeguardClasses = `
+//   text-blue-500
+//   text-green-500
+//   text-red-500
+//   text-yellow-500
+// `;
 interface CardProps {
   icon: React.ComponentType<{ className?: string }>;
   color: string;
