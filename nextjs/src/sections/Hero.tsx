@@ -2,8 +2,8 @@
 import React from "react";
 import Avatar from "@/components/Avatar";
 import Card from "@/components/Card";
-import { cardsData } from "@/schema/hero";
 import ChatInput from "@/components/ChatInput";
+import { cardsData } from "@/schema/danishGPT";
 
 const Hero = () => {
   return (
