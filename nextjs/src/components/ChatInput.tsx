@@ -1,5 +1,3 @@
-// components/ChatInput.tsx
-
 import React, { useState, useRef } from "react";
 import { PaperClipIcon, PaperAirplaneIcon } from "@heroicons/react/24/solid";
 
